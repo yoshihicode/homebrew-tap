@@ -5,46 +5,46 @@
 class Cubectl < Formula
   desc "cubectl controls cube instead of Kubernetes clusters."
   homepage "https://github.com/yoshihicode/cubectl"
-  version "1.3.0"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoshihicode/candle/releases/download/v1.3.0/candle_darwin_amd64.tar.gz"
-      sha256 "dec9d9ba90a1b53433ff603584f51a87d967baadb1888d167c80ccfd06a3525e"
+      url "https://github.com/yoshihicode/cubectl/releases/download/v0.1.2/cubectl_darwin_amd64.tar.gz"
+      sha256 "ed9b6b3717bc611386d64883176a2e140f140d291559509c99446bf0c0ee1e56"
 
       define_method(:install) do
-        bin.install "candle"
+        bin.install "cubectl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoshihicode/candle/releases/download/v1.3.0/candle_darwin_arm64.tar.gz"
-      sha256 "3a026375d2fcfdeb261dd6d82fd395369c954851573938efd2e8d402cb0fc73d"
+      url "https://github.com/yoshihicode/cubectl/releases/download/v0.1.2/cubectl_darwin_arm64.tar.gz"
+      sha256 "794b16fa97536c2c040ff93ec6bef00ca7c0f642d504b8b245f5d99b7de695f9"
 
       define_method(:install) do
-        bin.install "candle"
+        bin.install "cubectl"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshihicode/candle/releases/download/v1.3.0/candle_linux_amd64.tar.gz"
-      sha256 "00d5c291752aa68933b90d7a0e482a100af69550d6f6e4dd4b7e4d60b65891ae"
+      url "https://github.com/yoshihicode/cubectl/releases/download/v0.1.2/cubectl_linux_amd64.tar.gz"
+      sha256 "588a51aa3acdeb65a7e1e0679fed28288f8246a0877ecd65094d5e6074625c0b"
       define_method(:install) do
-        bin.install "candle"
+        bin.install "cubectl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshihicode/candle/releases/download/v1.3.0/candle_linux_arm64.tar.gz"
-      sha256 "2e5f6d39e4e3efed0293ac949fab89c393d01c5548d9af178406172cfa82f985"
+      url "https://github.com/yoshihicode/cubectl/releases/download/v0.1.2/cubectl_linux_arm64.tar.gz"
+      sha256 "c252a317f48972c013b91977b97bde3eef05c174b00c55e71e135c202e2c19ff"
       define_method(:install) do
-        bin.install "candle"
+        bin.install "cubectl"
       end
     end
   end
 
   test do
-    system "#{bin}/candle --help"
+    system "#{bin}/cubectl --help"
   end
 end
