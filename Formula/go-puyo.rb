@@ -5,21 +5,21 @@
 class GoPuyo < Formula
   desc "Go-Puyo is terminal based 'Puyo Puyo' similar game written in Go language."
   homepage "https://github.com/yoshihicode/go-puyo"
-  version "0.4.2"
+  version "0.4.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoshihicode/go-puyo/releases/download/v0.4.2/go-puyo_darwin_amd64.tar.gz"
-      sha256 "2504f0ecd8ae1399da181c8a5daaafb766cfbf6eb601842b6491ffc9584fd948"
+      url "https://github.com/yoshihicode/go-puyo/releases/download/v0.4.3/go-puyo_darwin_amd64.tar.gz"
+      sha256 "86dc342711de6dbc515476450eadf7107a691997d9141a7e93a03bb1ea469a0c"
 
       define_method(:install) do
         bin.install "go-puyo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoshihicode/go-puyo/releases/download/v0.4.2/go-puyo_darwin_arm64.tar.gz"
-      sha256 "d447e22aa10d8abe88ee61f67d94b4cef49a5ca10b6f40b3382e7602d0dc37d5"
+      url "https://github.com/yoshihicode/go-puyo/releases/download/v0.4.3/go-puyo_darwin_arm64.tar.gz"
+      sha256 "c2707038d24991faa4f730ba0f1ab3c5e99c5931362e4c638ab30e40908b56b2"
 
       define_method(:install) do
         bin.install "go-puyo"
@@ -29,15 +29,15 @@ class GoPuyo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshihicode/go-puyo/releases/download/v0.4.2/go-puyo_linux_amd64.tar.gz"
-      sha256 "73889cb65ca73a3c48cd7a5e1ca7d986ecb418af408519a086a990292ccf1fbd"
+      url "https://github.com/yoshihicode/go-puyo/releases/download/v0.4.3/go-puyo_linux_amd64.tar.gz"
+      sha256 "f1994af5da42e5112a20548807511e3f0c3d831874684427a4dce64a1d3474fc"
       define_method(:install) do
         bin.install "go-puyo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshihicode/go-puyo/releases/download/v0.4.2/go-puyo_linux_arm64.tar.gz"
-      sha256 "7dc1f2a8be96359c177f3fb9b4887fff06ca1632d7a1262d9e03a68e2f01446b"
+      url "https://github.com/yoshihicode/go-puyo/releases/download/v0.4.3/go-puyo_linux_arm64.tar.gz"
+      sha256 "968e4c44da8f84cede391c70a51af7fb4e2ca28d1b42746140be89776827cac7"
       define_method(:install) do
         bin.install "go-puyo"
       end
