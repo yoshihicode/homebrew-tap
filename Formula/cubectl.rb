@@ -11,7 +11,7 @@ class Cubectl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yoshihicode/candle/releases/download/v1.3.0/candle_darwin_amd64.tar.gz"
-      sha256 "deb454e7ff35dc92ad2414803f7eba74ebac73715e51520525444ab10ab27f1a"
+      sha256 "dec9d9ba90a1b53433ff603584f51a87d967baadb1888d167c80ccfd06a3525e"
 
       define_method(:install) do
         bin.install "candle"
@@ -19,7 +19,7 @@ class Cubectl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yoshihicode/candle/releases/download/v1.3.0/candle_darwin_arm64.tar.gz"
-      sha256 "640a780169da4970910df40b1bc1c1a84c9665dae63090c2d314c3d33f46decb"
+      sha256 "3a026375d2fcfdeb261dd6d82fd395369c954851573938efd2e8d402cb0fc73d"
 
       define_method(:install) do
         bin.install "candle"
@@ -30,14 +30,14 @@ class Cubectl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yoshihicode/candle/releases/download/v1.3.0/candle_linux_amd64.tar.gz"
-      sha256 "d1e62a01062d9bcde2a21f336f2750deded8c404c3f8775772db6d53e1c05b25"
+      sha256 "00d5c291752aa68933b90d7a0e482a100af69550d6f6e4dd4b7e4d60b65891ae"
       define_method(:install) do
         bin.install "candle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yoshihicode/candle/releases/download/v1.3.0/candle_linux_arm64.tar.gz"
-      sha256 "4b2daa8942abb4f0778ace8810168c7c5d47d4c89d1749c474148bf3ef6e5ee1"
+      sha256 "2e5f6d39e4e3efed0293ac949fab89c393d01c5548d9af178406172cfa82f985"
       define_method(:install) do
         bin.install "candle"
       end
