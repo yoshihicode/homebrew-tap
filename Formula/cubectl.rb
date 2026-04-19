@@ -11,7 +11,7 @@ class Cubectl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yoshihicode/cubectl/releases/download/v0.1.4/cubectl_darwin_amd64.tar.gz"
-      sha256 "572abf52cc8bd7f6f9ac77d844bc8e525447d61a1bb1a208d382009d985046bf"
+      sha256 "73e453effaf0e3f8f24cf800b127fc6cb939f831794867f7eb3647848c19a873"
 
       define_method(:install) do
         bin.install "cubectl"
@@ -19,7 +19,7 @@ class Cubectl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yoshihicode/cubectl/releases/download/v0.1.4/cubectl_darwin_arm64.tar.gz"
-      sha256 "8eefd014103ea2799c03ec43230d8f7cf0e248644360e8536adb040491cfebe7"
+      sha256 "85ab2ca8a1d7c31ff332bcf2ee66399561b3b20dec554de868807987492f4cae"
 
       define_method(:install) do
         bin.install "cubectl"
@@ -30,14 +30,14 @@ class Cubectl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yoshihicode/cubectl/releases/download/v0.1.4/cubectl_linux_amd64.tar.gz"
-      sha256 "a3450ba8934c62d3cd1b0399e08cdc1c0941614aa52f39bf338df22f1061d52a"
+      sha256 "89a5419b0633911d2648a44d4c3c807e196d36b2178e20b1c14b8c0b63b2be29"
       define_method(:install) do
         bin.install "cubectl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yoshihicode/cubectl/releases/download/v0.1.4/cubectl_linux_arm64.tar.gz"
-      sha256 "8cca55be1f1a78d73c72cd4bc9214c393739b26fa57849884a106490d6f9ae39"
+      sha256 "11e35d78f5744c261b209881fbf9c78f53397f3fd382edd54dd042a7b1ebebac"
       define_method(:install) do
         bin.install "cubectl"
       end
