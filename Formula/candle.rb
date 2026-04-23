@@ -5,21 +5,21 @@
 class Candle < Formula
   desc "candle is a joke command that displays a candle-like fire effect in your terminal."
   homepage "https://github.com/yoshihicode/candle"
-  version "1.3.1"
+  version "1.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoshihicode/candle/releases/download/v1.3.1/candle_darwin_amd64.tar.gz"
-      sha256 "da7e19962a5c7a36a57ec0283fbdd8d765dea96f0cfaeb11cc65f66d16344da8"
+      url "https://github.com/yoshihicode/candle/releases/download/v1.3.2/candle_darwin_amd64.tar.gz"
+      sha256 "9a3375b52b50306edaf1005ddf025fe8e8560b3cb4437cd5f062e19bbb771c14"
 
       define_method(:install) do
         bin.install "candle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoshihicode/candle/releases/download/v1.3.1/candle_darwin_arm64.tar.gz"
-      sha256 "794b34a5113f26e9104a6c748db2200f04c0f55bc731dfe9d1b997251ed8c40f"
+      url "https://github.com/yoshihicode/candle/releases/download/v1.3.2/candle_darwin_arm64.tar.gz"
+      sha256 "9083a8985ed866092dc3ae70d1fd40652ad7d1760db9a0b86b4153bc6a9a9b3d"
 
       define_method(:install) do
         bin.install "candle"
@@ -29,15 +29,15 @@ class Candle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshihicode/candle/releases/download/v1.3.1/candle_linux_amd64.tar.gz"
-      sha256 "02e0bdb1122a2156e86a59cbb62f945d6b5f50bc078cd30d7a29beb4d2d976b7"
+      url "https://github.com/yoshihicode/candle/releases/download/v1.3.2/candle_linux_amd64.tar.gz"
+      sha256 "10bf8a80462084724c693618e47c5c220f6662a5201793fd4e5539534661359d"
       define_method(:install) do
         bin.install "candle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshihicode/candle/releases/download/v1.3.1/candle_linux_arm64.tar.gz"
-      sha256 "30f4b027c25c290baf6286aea0d17e9a29984034f7787b2d2a3d2120127ac384"
+      url "https://github.com/yoshihicode/candle/releases/download/v1.3.2/candle_linux_arm64.tar.gz"
+      sha256 "b830ab226eba08f25bedab39ccbf8601b8cd5d9c499358f2887accc1c778b889"
       define_method(:install) do
         bin.install "candle"
       end
