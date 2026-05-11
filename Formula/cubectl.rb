@@ -5,21 +5,21 @@
 class Cubectl < Formula
   desc "cubectl controls cube instead of Kubernetes clusters."
   homepage "https://github.com/yoshihicode/cubectl"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoshihicode/cubectl/releases/download/v0.2.0/cubectl_darwin_amd64.tar.gz"
-      sha256 "ea9bf68e1550d244bec645055a0d8884cdc438218310fb47a055c0c0bc623e7c"
+      url "https://github.com/yoshihicode/cubectl/releases/download/v0.2.1/cubectl_darwin_amd64.tar.gz"
+      sha256 "daa488e641d6293f34d4f0643573447eed4ae0d704d5dc0aa14c6211c651092a"
 
       define_method(:install) do
         bin.install "cubectl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoshihicode/cubectl/releases/download/v0.2.0/cubectl_darwin_arm64.tar.gz"
-      sha256 "6800306656c312a0bbfe07474cbb18cbb9945b5fce713b4bb5ba357487b1fed9"
+      url "https://github.com/yoshihicode/cubectl/releases/download/v0.2.1/cubectl_darwin_arm64.tar.gz"
+      sha256 "ed2f07b990f20e0cde56cc3d06af9d90f72ebd38ce0c2c363e236d55a6b517cc"
 
       define_method(:install) do
         bin.install "cubectl"
@@ -29,15 +29,15 @@ class Cubectl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshihicode/cubectl/releases/download/v0.2.0/cubectl_linux_amd64.tar.gz"
-      sha256 "c0910785b2f48d2e38021636b121fa8efbef81fd6795bf1765f474a3d3681d8d"
+      url "https://github.com/yoshihicode/cubectl/releases/download/v0.2.1/cubectl_linux_amd64.tar.gz"
+      sha256 "5ebb870740ea73df29de747f5bae0b613a56eade4c63e19e3c308e1f056e544c"
       define_method(:install) do
         bin.install "cubectl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshihicode/cubectl/releases/download/v0.2.0/cubectl_linux_arm64.tar.gz"
-      sha256 "188bbf79673765ba3b040d5b4f8a39903eff943618efd45d61b56ccbfc37272b"
+      url "https://github.com/yoshihicode/cubectl/releases/download/v0.2.1/cubectl_linux_arm64.tar.gz"
+      sha256 "4a204bd0ad1c58d2d22028d60c87ba5661d8980f4dfe40c8e34c182a1c824534"
       define_method(:install) do
         bin.install "cubectl"
       end
