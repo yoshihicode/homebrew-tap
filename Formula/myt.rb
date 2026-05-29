@@ -11,7 +11,7 @@ class Myt < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yoshihicode/myt/releases/download/v0.1.2/myt_darwin_amd64.tar.gz"
-      sha256 "e030f09c3d552941e7f3435a656d314681c5e8ae1ff57b2704b46a0b13611eaf"
+      sha256 "450f45d3c7a64141fb72cac24e984e7059cab05bd04c84d6ece51b80b77bc8f3"
 
       define_method(:install) do
         bin.install "myt"
@@ -19,7 +19,7 @@ class Myt < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yoshihicode/myt/releases/download/v0.1.2/myt_darwin_arm64.tar.gz"
-      sha256 "d697b84ae1c9db77745712f923313dd7bd7d8810d715846861f140b7f0812ed7"
+      sha256 "ac4178b1e0338d57b2acaa9e00cd995810c1605af1a1c6aa08af124088004515"
 
       define_method(:install) do
         bin.install "myt"
@@ -30,14 +30,14 @@ class Myt < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yoshihicode/myt/releases/download/v0.1.2/myt_linux_amd64.tar.gz"
-      sha256 "6287775673ea69ac05ed6745bf49f9ac35fce76e8bf9a518245e29c4089a0a26"
+      sha256 "3431f1dc6781f828e66d48aa1325fde928a4f295d668562bcf7652759ad6629e"
       define_method(:install) do
         bin.install "myt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yoshihicode/myt/releases/download/v0.1.2/myt_linux_arm64.tar.gz"
-      sha256 "89bdcb322b1b5cc4f28593979be4b3b00287b8b78e532312471de6d1dd822659"
+      sha256 "94cd903a76d54c19217bab3bee499012c0f0a32b39cce0aacc958feb33d7df89"
       define_method(:install) do
         bin.install "myt"
       end
