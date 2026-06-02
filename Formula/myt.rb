@@ -5,21 +5,21 @@
 class Myt < Formula
   desc "myt is terminal based MySQL client."
   homepage "https://github.com/yoshihicode/myt"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoshihicode/myt/releases/download/v0.2.2/myt_darwin_amd64.tar.gz"
-      sha256 "43896d278f2d9c95cdc4a9fdb986297e21fb81dfc7ac66f0929c56f4cc081437"
+      url "https://github.com/yoshihicode/myt/releases/download/v0.2.3/myt_darwin_amd64.tar.gz"
+      sha256 "d92b0731f522971e452285fb0659280f51e5beab08c55664f3260a59f13b527e"
 
       define_method(:install) do
         bin.install "myt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoshihicode/myt/releases/download/v0.2.2/myt_darwin_arm64.tar.gz"
-      sha256 "997548c5e91643d248fbf7a5b79a4922e54efd1d4bf8f7e08e09c0f2f05d4a53"
+      url "https://github.com/yoshihicode/myt/releases/download/v0.2.3/myt_darwin_arm64.tar.gz"
+      sha256 "0cb8f36985c9ba6617ac63454914120fe15f9f5ac6f674ce4d1217e730951839"
 
       define_method(:install) do
         bin.install "myt"
@@ -29,15 +29,15 @@ class Myt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshihicode/myt/releases/download/v0.2.2/myt_linux_amd64.tar.gz"
-      sha256 "a6588b24c5d6910c01e1d11d07c91517055615e2b1d132f498a9c3da2365c15a"
+      url "https://github.com/yoshihicode/myt/releases/download/v0.2.3/myt_linux_amd64.tar.gz"
+      sha256 "4a6080c63d793fe7054aaa3c85d271788b17492ed8b2f2c8d57938417b1644c1"
       define_method(:install) do
         bin.install "myt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshihicode/myt/releases/download/v0.2.2/myt_linux_arm64.tar.gz"
-      sha256 "abe97c34bc66914a8bbdefe7a5d6d55a59f90ffddfd69bb877d02056f0c8f803"
+      url "https://github.com/yoshihicode/myt/releases/download/v0.2.3/myt_linux_arm64.tar.gz"
+      sha256 "7c4305ba4051d515082e39da0b8a7f41cbb4c7ce99e530eeeaa4a611d160e197"
       define_method(:install) do
         bin.install "myt"
       end
