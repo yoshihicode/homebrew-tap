@@ -4,21 +4,21 @@ cask "kumihan4md" do
 
   on_macos do
     on_arm do
-      sha256 "ff44d87a8751c65957e8665b98a3b35bf6052a032962da24382ca5fe400c1d4a"
+      sha256 "0c6c66cc59a95c41b061286f1e84b2a5874ac84cbbb811fe7c39bc6edafea863"
       url "https://github.com/yoshihicode/kumihan4md/releases/download/v#{version}/kumihan4md_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "561efd4c88d0030709785935dc900b97cef46147883287c9d5fd564ee6ecab60"
+      sha256 "9fa72402fa70d5493b65872022c0084901f1922c3fd6ee350f2cf43092af12e0"
       url "https://github.com/yoshihicode/kumihan4md/releases/download/v#{version}/kumihan4md_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "d71d8234b3c1305cdfab11fc8feba5c86878559e41dc551102a6c9077fdac55d"
+      sha256 "a101bba0e3753c6dec4afe6d6c66a4626c69bab497219746937c6bf4f856f3db"
       url "https://github.com/yoshihicode/kumihan4md/releases/download/v#{version}/kumihan4md_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ec9a3003dbbf45fee9d46bfafb1725956bb977b94ea161bb1848f521e22580f3"
+      sha256 "a73053c7e9b840730ee7e35fe0940de84a141680c8e5f85ee2800467587ad5ce"
       url "https://github.com/yoshihicode/kumihan4md/releases/download/v#{version}/kumihan4md_linux_amd64.tar.gz"
     end
   end
